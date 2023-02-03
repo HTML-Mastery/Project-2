@@ -1,20 +1,20 @@
 .body {
-  background-color: #f7f7f7;
+  background-color: #d9cccc;
+  border: 1px solid #f7f7f7;
 }
-
-header {
-  border: 1px solid #f1f1f1;
-  background-color: #fff;
-}
-h1 {
-  margin-left: 100px;
+iframe {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+  filter: blur(2px);
 }
 
 .flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
+  position: relative;
+  width: 100%;
+  height: 500px;
   background-color: #f7f7f7;
 }
 .fixed-column {
@@ -23,12 +23,15 @@ h1 {
   border: 1px solid #ededed;
   border-radius: 5px;
   margin-top: 10px;
-  opacity: 1;
-  width: 400px;
+  width: 350px;
   height: 200px;
-  margin: 10px;
   text-align: center;
   line-height: 45px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 50%;
+  bottom: 50%;
 }
 .fixed-column:hover {
   box-shadow: 1px 1px 5px #867676;
@@ -48,6 +51,7 @@ a {
   font-size: 22px;
   margin-left: 5px;
   margin-top: -30px;
+  color: #7a5e5e;
 }
 .fixed-column h2 {
   line-height: 15px;
