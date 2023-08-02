@@ -124,3 +124,6 @@ spen {
 hr {
   color: #ededed;
 }
+a{
+  text-decoration: none;
+}
